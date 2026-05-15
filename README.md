@@ -10,6 +10,11 @@ The goal is to transform raw data into **actionable business insights** using **
 
 ---
 
+## 📊 Dashboard Preview
+![image alt](https://github.com/Amitkumardas123/Customer-Behaviour-Analysis/blob/75f374520f414d881a38d1734698ff97692f2809/Dashboard%20Img.png)
+
+---
+
 ## 🎯 Business Objective
 - Understand customer purchasing patterns  
 - Identify high-value and low-engagement customers  
@@ -24,6 +29,82 @@ The goal is to transform raw data into **actionable business insights** using **
 - **SQL (MySQL)** → Data analysis & querying  
 - **Power BI (DAX)** → Dashboard & KPI tracking  
 
+---
+
+# 🔄 Project Workflow Architecture
+
+```text
+Raw Dataset
+     ↓
+Data Cleaning (Python)
+     ↓
+Feature Engineering
+     ↓
+MySQL Database Storage
+     ↓
+SQL Business Analysis
+     ↓
+Power BI Dashboard
+     ↓
+Business Insights & Recommendations
+```
+---
+## 📁 Project File Structure & Workflow
+
+```bash
+Customer-Behavior-Analysis/
+│
+├── data/
+│   ├── raw_customer_data.csv
+│   │      → Original dataset
+│   │
+│   └── cleaned_customer_data.csv
+│          → Cleaned dataset after preprocessing
+│
+├── python/
+│   ├── data_cleaning.py
+│   │      → Handles missing values & formatting
+│   │
+│   ├── feature_engineering.py
+│   │      → Creates age groups, customer segments, rating categories
+│   │
+│   └── exploratory_analysis.py
+│          → Performs EDA and behavioral analysis
+│
+├── sql/
+│   ├── schema.sql
+│   │      → Creates MySQL database tables
+│   │
+│   ├── data_import.sql
+│   │      → Imports cleaned dataset into MySQL
+│   │
+│   └── Customer Behaviour.sql
+│          → SQL queries for business insights
+│
+├── powerbi/
+│   ├── customer_behavior_dashboard.pbix
+│   │      → Interactive Power BI dashboard
+│   │
+│   └── dashboard_screenshots/
+│          ├── executive_dashboard.png
+│          ├── customer_segmentation.png
+│          ├── revenue_analysis.png
+│          └── product_performance.png
+│
+├── images/
+│   └── workflow_architecture.png
+│          → Project workflow diagram
+│
+├── reports/
+│   └── Customer Behaviour(1).pptx
+│          → Final business insights & recommendations report
+│
+├── README.md
+│      → Complete project documentation
+│
+└── requirements.txt
+       → Python libraries used in the project
+```
 ---
 
 ## 🔄 Project Workflow (Step-by-Step)
